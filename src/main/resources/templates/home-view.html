@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+<main>
+    <h1>Welcome <span th:text="${user.username + ', ' + user.email}"></span> to the Home Page</h1>
+
+<p>This is a simple <span class="important">example of a home</span> view.</p>
+<form method="post">
+    <label for="username">Username</label><input id="username" name="username" type="text">
+    <label for="password">Password</label><input id="password" name="password" type="text">
+    <button>"Submit"</button>
+</form>
+
+<!-- Accessing the "message" attribute from the model using Thymeleaf expression -->
+<p>Message from the controller: <span th:text="${message}"></span></p>
+<a href="demopage.html">Visit My Demo page</a>
+</main>
+</body>
+</html>

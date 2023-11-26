@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restapidb
+    username: postgres
+    password: 7257
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
